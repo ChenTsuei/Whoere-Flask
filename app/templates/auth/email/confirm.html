@@ -1,0 +1,7 @@
+<p>{{ user.username }},</p>
+<p>您好. 欢迎加入 <b>Whoere</b>!</p>
+<p><a href="{{ url_for('auth.confirm', token=token, _external=True) }}">点击此处</a>确认您的邮箱地址.</p>
+<p>或者您可以将下面的链接粘贴到您的地址栏里:</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+<p>崔晨</p>
+<p><small>注意: 请不要回复此邮件.</small></p>
